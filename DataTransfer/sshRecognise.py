@@ -13,7 +13,7 @@ session.handshake(sock)
 session.userauth_password(user, password)
 
 channel = session.open_session()
-channel.execute('cd ~/innovationProject/frec/facrec && ls && python identify_face_image.py')
+channel.execute('cd ~/innovationProject/frec/facrec  && python identify_face_image.py')
 size, data = channel.read()
 while size > 0:
     print(data.decode())
