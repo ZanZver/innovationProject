@@ -3,7 +3,7 @@ from ssh2.session import Session
 
 host = '137.221.149.141'
 user = 'zanserver'
-password = 'bcuserver2019'
+password = ''
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 sock.connect((host,22))
